@@ -49,7 +49,7 @@ Shireen Kahlon
 
 3. We have also created GOOGLE DOCUMENTs and shared across our team to document brainstorming ideas, roles, suggestions, links to research etc.
       
-## Technologies used
+## Technologies
 
 ### Data Cleaning and Analysis
 We are planning to import pandas into python to clean the data we will be using for our analysis
@@ -62,3 +62,6 @@ SciKitLearn is the ML library we'll be using to perform a linear regression on o
 	
 ### Dashboard
 We are planning to use tableau to create our dashboards. 
+
+## Database 
+The ERD depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
