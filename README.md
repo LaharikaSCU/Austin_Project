@@ -35,7 +35,7 @@ Brian Umlang
 
 Kathryn Kane
 
-Krishna V
+Ramakrishna Vadla
 
 Laharika Pochampalli
 
@@ -82,6 +82,10 @@ Following are the steps thats been peformed for predicting the house price aroun
 ![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)
 1. Linear Regression for the house price prediction.
 ![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)
+1. Scatter plot between Year Built vs SalePrice.
+![03_ScatterPlot-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG)
+1. Linear Model on Year Built and House Price Prediction.
+![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
 
 
 Based on the Linear Regression line, the data points are not along the linear line, so its very hard to predict the house price using the linear regression.
