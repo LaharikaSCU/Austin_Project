@@ -29,7 +29,7 @@ It has 15171 rows and 47 columns including home images.
 
 ## **Team Communication:**
 
-###**Team Members:**
+### **Team Members:**
 
 Brian Umlang
 
@@ -41,7 +41,7 @@ Laharika Pochampalli
 
 Shireen Kahlon
 
-###**E-Meet Tools:**
+### **E-Meet Tools:**
 
 1. Our team is making use of the most of the time in the virtual and required ZOOM classes.
 
@@ -49,15 +49,16 @@ Shireen Kahlon
 
 3. We have also created GOOGLE DOCUMENTs and shared across our team to document brainstorming ideas, roles, suggestions, links to research etc.
       
-  ## Technologies used
+## Technologies used
 
-  ### Data Cleaning and Analysis
-  We are planning to import pandas into python to clean the data we will be using for our analysis
+### Data Cleaning and Analysis
+We are planning to import pandas into python to clean the data we will be using for our analysis
 
-  ### Database storage
-  We are using Postgres SQL to host the database and will be providing a file with the necessary code to create the database. 
+### Database storage
+We are using Postgres SQL to host the database and will be providing a file with the necessary code to create the database. 
   
-  ### Machine Learning
-
-  ### Dashboard
-  We are planning to use tableau to create our dashboards. 
+### Machine Learning
+SciKitLearn is the ML library we'll be using to perform a linear regression on our data. 
+	
+### Dashboard
+We are planning to use tableau to create our dashboards. 
