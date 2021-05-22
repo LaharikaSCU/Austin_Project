@@ -31,15 +31,15 @@ It has 15171 rows and 47 columns including home images.
 
 ### **Team Members:**
 
-Brian Umlang
+1. Brian Umlang
 
-Kathryn Kane
+1. Kathryn Kane
 
-Ramakrishna Vadla
+1. Ramakrishna Vadla
 
-Laharika Pochampalli
+1. Laharika Pochampalli
 
-Shireen Kahlon
+1. Shireen Kahlon
 
 ### **E-Meet Tools:**
 
@@ -87,6 +87,8 @@ Following are the steps thats been peformed for predicting the house price aroun
 1. Linear Model on Year Built and House Price Prediction.
 ![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
 
+Summary:
+1. Using Linear Regression ML, the data points are not along the linear line, so its very hard to predict the house price using the linear regression using the Living Area.
+1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
 
-Based on the Linear Regression line, the data points are not along the linear line, so its very hard to predict the house price using the linear regression.
-We might need to explore some other models.
+Need to use other Model like log Regression or RandomForest Regression to predict housing price.
