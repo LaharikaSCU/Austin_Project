@@ -52,7 +52,7 @@ FROM atxhousing
 
 /* Create a table for locations */
 CREATE TABLE houseLocation AS
-SELECT zpid, street address, city, zipcode,  latitude, longitude
+SELECT zpid, streetaddress, city, zipcode,  latitude, longitude
 FROM atxhousing
 
 /* Add a primary key to the locations table */
@@ -80,4 +80,61 @@ REFERENCES houseLocation (zpid)
 /* View table */
 SELECT *
 FROM price
+
+/* Create a table for features */
+CREATE TABLE features AS
+SELECT zpid, garagespaces, hascooling, hasgarage, hasheating, hasspa, hasview, numofpatioandporchfeatures, numofwaterfrontfeatures
+FROM atxhousing;
+
+/* Add a primary key to the features table */
+ALTER TABLE features
+ADD PRIMARY KEY (zpid);
+
+/*Add a foreign key to the features table referencing the location table */
+ALTER TABLE features
+ADD FOREIGN KEY (zpid)
+REFERENCES price (zpid);
+
+/* View the features table */
+SELECT *
+FROM features
+
+/* Create the amenities table */
+CREATE TABLE amenities AS
+SELECT zpid, parkingspaces, numofaccessibilityfeatures, numofappliances, numofparkingfeatures, 
+	numofsecurityfeatures,numofwindowfeatures, numofcommunityfeatures, numofbathrooms, numofbedrooms,
+	numofstories, lotsizesqft, livingareasqft
+FROM atxhousing
+
+/* Add a primary key to the amenities table */
+ALTER TABLE amenities
+ADD PRIMARY KEY (zpid);
+
+/* Add a foreign key to the amenities table */
+ALTER TABLE amenities
+ADD FOREIGN KEY (zpid)
+REFERENCES price (zpid) 
+
+/* View amenities table */
+SELECT *
+FROM amenities
+
+/* Create a table for schools */
+CREATE TABLE schools AS
+SELECT zpid, numofprimaryschools, numofelementaryschools, numofmiddleschools, numofhighschools,
+	avgschooldistance, avgschoolrating, avgschoolsize, medianstudentsperteacher
+FROM atxhousing;
+
+/* Set the primary key for schools */
+ALTER TABLE schools
+ADD PRIMARY KEY (zpid)
+
+/* Set the foreign key for schools */
+ALTER TABLE schools
+ADD FOREIGN KEY (zpid)
+REFERENCES homelocation (zpid);
+
+/* View schools table */
+SELECT *
+FROM schools;
 
