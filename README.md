@@ -19,7 +19,6 @@ The dataset is 2GB in size.
 
 It has 15171 rows and 47 columns including home images.
 
-
 ## **Questions we hope to answer with dataset available:**
 
 1. Analyze how the Austin housing market has changed over the years. 
@@ -28,4 +27,25 @@ It has 15171 rows and 47 columns including home images.
 
 3. What factors majorly influence the increase in housing prices (like schools, population, square footage of the house, built year etc)
 
+## **Team Communication:**
+
+###**Team Members:**
+
+Brian Umlang
+
+Kathryn Kane
+
+Krishna V
+
+Laharika Pochampalli
+
+Shireen Kahlon
+
+###**E-Meet Tools:**
+
+1. Our team is making use of the most of the time in the virtual and required ZOOM classes.
+
+2. We also have a chat group on SLACK and on WHATSAPP so that we are all reachable in offline hours too.
+
+3. We have also created GOOGLE DOCUMENTs and shared across our team to document brainstorming ideas, roles, suggestions, links to research etc.
       
