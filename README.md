@@ -64,7 +64,10 @@ SciKitLearn is the ML library we'll be using to perform a linear regression on o
 We are planning to use tableau to create our dashboards. 
 
 ## Database 
-The ERD depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
+The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
+
+![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/main/Images/ERD.png)
+
 
 ### ML Model:
 Following are the steps thats been peformed for predicting the house price around Austin Area.
