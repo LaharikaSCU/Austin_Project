@@ -49,26 +49,35 @@ It has 15171 rows and 47 columns including home images.
 
 3. We have also created GOOGLE DOCUMENTs and shared across our team to document brainstorming ideas, roles, suggestions, links to research etc.
       
-## Technologies
+## **Technologies**
 
-### Data Cleaning and Analysis
+### **Data Cleaning and Analysis:**
+
 We are planning to import pandas into python to clean the data we will be using for our analysis
 
-### Database storage
+### **Database storage:**
+
 We are using Postgres SQL to host the database and will be providing a file with the necessary code to create the database. 
   
-### Machine Learning
+### **Machine Learning:**
 SciKitLearn is the ML library we'll be using to perform a linear regression on our data. 
 	
-### Dashboard
+### **Dashboard:**
 We are planning to use tableau to create our dashboards. 
 
-## Database 
-The ERD depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
+## **Database**
+ 
+The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
 
-### ML Model:
-Following are the steps thats been peformed for predicting the house price around Austin Area.
-1. Drop the following columns as there are not helpful for prediction
+![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/main/Images/ERD.png)
+
+
+### **ML Model:**
+
+Following are the steps thats been performed for predicting the house price in Austin Area.
+
+* Drop the following columns as they are not helpful for prediction
+
     1. homeImage.
     1. numOfPhotos.
     1. numPriceChanges.
@@ -78,17 +87,26 @@ Following are the steps thats been peformed for predicting the house price aroun
     1. longitude.
     1. latestPriceSource.
 
-1. Scatter plot between Living Area (sqft) vs SalePrice
+Scatter plot between Living Area (sqft) vs SalePrice:
+
 ![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)
-1. Linear Regression for the house price prediction.
+
+Linear Regression for the house price prediction:
+
 ![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)
-1. Scatter plot between Year Built vs SalePrice.
+
+Scatter plot between Year Built vs SalePrice:
+
 ![03_ScatterPlot-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG)
-1. Linear Model on Year Built and House Price Prediction.
+
+Linear Model on Year Built and House Price Prediction:
+
 ![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
 
-Summary:
-1. Using Linear Regression ML, the data points are not along the linear line, so its very hard to predict the house price using the linear regression using the Living Area.
-1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
+### **Summary:**
+
+1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+
+2. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
 
 Need to use other Model like log Regression or RandomForest Regression to predict housing price.
