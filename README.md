@@ -103,10 +103,14 @@ Linear Model on Year Built and House Price Prediction:
 
 ![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
 
+Correlation Matrix:
+![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
+
 ### **Summary:**
 
 1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
+1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
 
-2. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
 
 Need to use other Model like log Regression or RandomForest Regression to predict housing price.
