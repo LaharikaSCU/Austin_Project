@@ -104,7 +104,7 @@ Linear Model on Year Built and House Price Prediction:
 ![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
 
 Correlation Matrix:
-
+![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
 
 ### **Summary:**
 
