@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+##custom ignore files
+*.DS_Store
+config.py
+
 # Distribution / packaging
 .Python
 build/
@@ -62,6 +66,9 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 *.DS_Store
+
+#db password
+config.py
 
 # Flask stuff:
 instance/
