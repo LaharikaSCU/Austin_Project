@@ -72,7 +72,7 @@ We are planning to use tableau to create our dashboards.
  
 The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
 
-![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/main/Images/ERD.png)
+![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png)
 
 
 ### **ML Model:**
