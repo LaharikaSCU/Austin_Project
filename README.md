@@ -122,3 +122,6 @@ Need to use other Model like log Regression or RandomForest Regression to predic
 ### **Dashboard:**
 https://docs.google.com/presentation/d/1OjKWBjaMl5EzKH5ZY40wFdSU4p8Zs2TylpP1UzfbEN8/edit#slide=id.gdb119f06ac_0_277
 
+### **Presentation Slides**
+https://docs.google.com/presentation/d/1Q65tIs-eJl6yF4WKYmtobcKg9m11rnzN_qmfhjeljio/edit#slide=id.p
+
