@@ -23,7 +23,7 @@ It has 15171 rows and 47 columns including home images.
 
 1. Analyze how the Austin housing market has changed over the years. 
 
-2. Which cities/suburubs in and around Austin are fastest growing and popular with respect to real estate?
+2. Which cities/suburbs in and around Austin are fastest growing and popular with respect to real estate?
 
 3. What factors majorly influence the increase in housing prices (like schools, population, square footage of the house, built year etc)
 
@@ -57,10 +57,13 @@ We are planning to import pandas into python to clean the data we will be using 
 
 ### **Database storage:**
 
-We are using Postgres SQL to host the database and will be providing a file with the necessary code to create the database. 
+We are using Postgres SQL to host the database and will be providing a file with the necessary code to create the database. SQLAlchemy will be used to create a connection from the database into Python.
   
 ### **Machine Learning:**
-SciKitLearn is the ML library we'll be using to perform a linear regression on our data. 
+SciKitLearn is the ML library we'll be using to perform linear regression and gradient boost.
+
+### **Visualizations**
+Seaborn and Matplotlib are used to create visualizations of how different features impact the predictions and patterns in the machine learning model.
 	
 ### **Dashboard:**
 We are planning to use tableau to create our dashboards. 
