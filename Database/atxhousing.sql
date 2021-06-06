@@ -48,70 +48,18 @@ Create table atxhousing(
     numOfStories numeric,
     homeImage varchar(2000));
 
-
-    /*  table query created by Krishna*/
-    /*table with raw data*/
-
-    create table atxhousing_raw(
-    zpid integer primary key,
-    city varchar(300),
-    streetAddress varchar(300),
-    zipcode integer,
-	description varchar(65535),
-    latitude numeric ,
-    longitude numeric,
-    propertyTaxRate numeric,
-    garageSpaces int ,
-    hasAssociation boolean,
-    hasCooling boolean ,
-    hasGarage boolean,
-    hasHeating boolean,
-    hasSpa boolean ,
-    hasView boolean,
-    homeType varchar(30),
-    parkingSpaces integer,
-    yearBuilt integer,
-    latestPrice numeric,
-    numPriceChanges integer,
-    latest_saledate date,
-    latest_salemonth integer,
-    latest_saleyear integer,
-    latestPriceSource varchar(300),
-    numOfPhotos integer,
-    numOfAccessibilityFeatures integer,
-    numOfAppliances integer,
-    numOfParkingFeatures integer,
-    numOfPatioAndPorchFeatures integer,
-    numOfSecurityFeatures integer,
-    numOfWaterfrontFeatures integer,
-    numOfWindowFeatures integer,
-    numOfCommunityFeatures integer,
-    lotSizeSqFt numeric,
-    livingAreaSqFt numeric,
-    numOfPrimarySchools integer,
-    numOfElementarySchools integer,
-    numOfMiddleSchools integer,
-    numOfHighSchools integer,
-    avgSchoolDistance numeric,
-    avgSchoolRating numeric,
-    avgSchoolSize numeric,
-    MedianStudentsPerTeacher numeric,
-    numOfBathrooms numeric,
-    numOfBedrooms numeric,
-    numOfStories numeric, 
-    homeImage varchar(5000) )
 /* View the table results */
 SELECT *
 FROM atxhousing ;
 
+/* Add a primary key to the atxhousing table */
 ALTER TABLE atxhousing
 ADD PRIMARY KEY(zpid);
 
-/* Create a table for locations */
+/* Create a table for houselocation */
 CREATE TABLE houseLocation AS
 SELECT zpid, "streetAddress", city, zipcode,  latitude, longitude
 FROM public.atxhousing;
-
 
 /* Add a primary key to the locations table */
 ALTER TABLE houseLocation
@@ -121,40 +69,30 @@ ADD PRIMARY KEY (zpid);
 SELECT *
 FROM houseLocation;
 
-DROP TABLE price
-
 /* Create a table for price */
 CREATE TABLE price AS
 SELECT zpid, "propertyTaxRate", "latestPrice", "numPriceChanges", latest_saledate, "yearBuilt",
-latest_salemonth, "latestPriceSource"
+latest_salemonth, latest_saleyear, "latestPriceSource"
 FROM atxhousing;
 
 /* Add a primary key for price */
 ALTER TABLE price
 ADD PRIMARY KEY (zpid);
 
-
 /* Add a foreign key for price referencing the location table */
 ALTER TABLE houseLocation
 ADD FOREIGN KEY (zpid)
 REFERENCES houseLocation (zpid) ;
 
-
-/* View table */
+/* View table price */
 SELECT *
 FROM price
 
-
+/* Create a table for features */
 CREATE TABLE features AS
 SELECT zpid, "garageSpaces", "hasCooling", "hasGarage", "hasHeating", "hasSpa", "hasView",
 "numOfPatioAndPorchFeatures", "numOfWaterfrontFeatures", "numOfPhotos"
 FROM atxhousing;
-
-
-/*Add a foreign key to the features table referencing the location table */
-ALTER TABLE features
-ADD FOREIGN KEY (zpid)
-REFERENCES price (zpid);
 
 /*Add a foreign key to the features table referencing the location table */
 ALTER TABLE features
@@ -177,17 +115,14 @@ FROM atxhousing;
 ALTER TABLE amenities
 ADD PRIMARY KEY (zpid);
 
-
 /* Add a foreign key to the amenities table */
 ALTER TABLE amenities
 ADD FOREIGN KEY (zpid)
-REFERENCES price (zpid) 
-;
+REFERENCES price (zpid) ;
 
 /* View amenities table */
 SELECT *
 FROM amenities;
-
 
 /* Create a table for schools */
 CREATE TABLE schools AS
@@ -199,34 +134,35 @@ FROM atxhousing;
 ALTER TABLE schools
 ADD PRIMARY KEY (zpid);
 
-
 /* Set the foreign key for schools */
 ALTER TABLE schools
 ADD FOREIGN KEY (zpid)
-REFERENCES houseLocation  (zpid);
-
+REFERENCES houseLocation (zpid);
 
 /* View schools table */
 SELECT *
 FROM schools;
 
-/* house additional info */
+/* Create table for house_additional_info */
 create table house_additional_info 
 as select zpid , description, "homeImage" 
 from atxhousing;
 
+/* Set the primary key for house_additional_info */
 ALTER TABLE house_additional_info
-ADD PRIMARY KEY (zpid;
+ADD PRIMARY KEY (zpid);
 
+/* Set the foreign key for house_additional_info */
 ALTER TABLE house_additional_info
 ADD FOREIGN KEY (zpid)
 REFERENCES houseLocation (zpid) ;
 
-
+/*View house_additional_info table*/
 select * from house_additional_info;
 
 /* Joined query of all the features related to house price prediction */
 select 
+    --location details
 	hl.zpid, 
 	hl."streetAddress",
 	hl.city,
