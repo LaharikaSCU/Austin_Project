@@ -79,16 +79,13 @@ The ERD, as shown below, depicts the relationships between tables within the SQL
 
 Following are the steps thats been performed for predicting the house price in Austin Area.
 
+Following are the steps thats been performed for predicting the house price in Austin Area.
+
 * Drop the following columns as they are not helpful for prediction
 
-    1. homeImage.
-    1. numOfPhotos.
-    1. numPriceChanges.
-    1. description.
-    1. streetAddress.
-    1. latitude.
-    1. longitude.
-    1. latestPriceSource.
+    1. homeImage.				2. numOfPhotos.				3. numPriceChanges.
+    4. description.				5. streetAddress.			6. latitude.
+	7. longitude.				8. latestPriceSource.
 
 Scatter plot between Living Area (sqft) vs SalePrice:
 
