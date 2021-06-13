@@ -159,6 +159,12 @@ Number of Iteration no change(n_iter_no-Change): Defualt is none, optional param
 1. Higher Flexibility
 1. Missing Data
 
+### **Feature Engineer**:
+1. Dropped independent categorical variables (columns) which are not affecting the Sale Price.
+1. Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
+1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
+1. Based on the Correlation Matrix we were able to limit the most independent variables which are affecting the Sale Price.
+
 
 ### **Summary:**
 
