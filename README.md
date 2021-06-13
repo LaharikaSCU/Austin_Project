@@ -165,15 +165,21 @@ Number of Iteration no change(n_iter_no-Change): Defualt is none, optional param
 1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
 1. Based on the Correlation Matrix we were able to limit the most independent variables which are affecting the Sale Price.
 
+### **Results**:
+Simple Linear Regression:  
+	Using either Living Sqft or Year Built gave the model score equal to 1. Data can be biased, model prediction can be overfitting.
+Gradient Boost Regression: 
+	The model score is 0.6 based on the selected features.
+	RMSE is 310772.55
+	Even though the rmse is very high, when compared to the Sale Price prediction, the model is almost 5,0000 to 30,000 difference on most of the houses.
+	
 
 ### **Summary:**
 
-#1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
-#1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
-#1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
-
-Need to use other Model like log Regression or RandomForest Regression to predict housing price.
-
+1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
+1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
+1. Applied the Gradient Boost Regression ML , this model one of the best Additive Models along with the Random Forest Regression, based on the model score , will still prefer to perform Random Forest Regression if time permits.
 
 ### **Dashboard:**
 https://docs.google.com/presentation/d/1OjKWBjaMl5EzKH5ZY40wFdSU4p8Zs2TylpP1UzfbEN8/edit#slide=id.gdb119f06ac_0_277
