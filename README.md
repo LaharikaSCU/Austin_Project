@@ -6,18 +6,18 @@ Austin Housing Market Predictions
 
 ## **Reason the topic was selected:**
 
-Austin, Texas has been the America's hottest housing market in 2020 - 21. The growing high-tech employment from companies like Apple, Tesla, Oracle and other start-ups are causing home sales and prices in the Austin real estate market to jump. Austin is located in the Hill Country region of Central Texas, surrounded by lakes and rivers, including the Colorado River. Austin’s booming job market, beautiful weather, scenic views, plentiful nightlife options, diverse dining scene and outdoor experiences are some of the reasons why professionals are flocking to the capital city of Texas.
+Austin, Texas was America's hottest housing market in 2020 - 21. The growing high-tech employment from companies like Apple, Tesla, Oracle and other start-ups are causing home sales and prices in the Austin real estate market to jump. Austin is located in the Hill Country region of Central Texas, surrounded by lakes and rivers, including the Colorado River. Austin’s booming job market, beautiful weather, scenic views, plentiful nightlife options, diverse dining scene and outdoor experiences are some of the reasons why professionals are flocking to the capital city of Texas.
 
-Also, majority of our team-mates are from Austin and others have shown interest in analyzing the real estate trends in Austin. Hence, we chose this interesting topic for analysis.
+Additionally the majority of our team-mates are from Austin and others have shown interest in analyzing the real estate trends in Austin. Hence, we chose this interesting topic for analysis.
 
 ## **Description of the source of data:**
 
-The dataset we chose is on Kaggle. Below is the link for the same:
+* The dataset we chose is on Kaggle. Below is the link for the same:
 https://www.kaggle.com/ericpierce/austinhousingprices
 
-The dataset is 2GB in size. 
+* The dataset is 2GB in size. 
 
-It has 15171 rows and 47 columns including home images.
+* It has 15171 rows and 47 columns including home images.
 
 ## **Questions we hope to answer with dataset available:**
 
@@ -25,7 +25,7 @@ It has 15171 rows and 47 columns including home images.
 
 2. Which cities/suburbs in and around Austin are fastest growing and popular with respect to real estate?
 
-3. What factors majorly influence the increase in housing prices (like schools, population, square footage of the house, built year etc)
+3. What factors influence the increase in housing prices (like schools, population, square footage of the house, built year etc)?
 
 ## **Team Communication:**
 
@@ -111,12 +111,10 @@ Correlation Matrix:
 
 ### **Summary:**
 
-1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
-1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
-1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
-
-
-Need to use other Model like log Regression or RandomForest Regression to predict housing price.
+1. When we used Linear Regression ML, the data points were not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+2. When we used Year Built instead of the Living Area, we had the same results. It's hard to predict the House Price using Linear Regression.
+3. We decided to add the correlation Matrix which helps to find out which Features are effecting the house prices.
+4. We found that we needed to use another model like log Regression or RandomForest Regression to predict housing price.
 
 
 ### **Dashboard:**
