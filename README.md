@@ -111,12 +111,10 @@ Correlation Matrix:
 
 ### **Summary:**
 
-1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
-1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
-1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
-
-
-Need to use other Model like log Regression or RandomForest Regression to predict housing price.
+1. When we used Linear Regression ML, the data points were not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+2. When we used Year Built instead of the Living Area, we had the same results. It's hard to predict the House Price using Linear Regression.
+3. We decided to add the correlation Matrix which helps to find out which Features are effecting the house prices.
+4. We found that we needed to use another model like log Regression or RandomForest Regression to predict housing price.
 
 
 ### **Dashboard:**
