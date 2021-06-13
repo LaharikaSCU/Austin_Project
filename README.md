@@ -12,12 +12,12 @@ Additionally the majority of our team-mates are from Austin and others have show
 
 ## **Description of the source of data:**
 
-The dataset we chose is on Kaggle. Below is the link for the same:
+* The dataset we chose is on Kaggle. Below is the link for the same:
 https://www.kaggle.com/ericpierce/austinhousingprices
 
-The dataset is 2GB in size. 
+* The dataset is 2GB in size. 
 
-It has 15171 rows and 47 columns including home images.
+* It has 15171 rows and 47 columns including home images.
 
 ## **Questions we hope to answer with dataset available:**
 
