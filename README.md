@@ -185,7 +185,20 @@ Gradient Boost Regression:
 1. Applied the Gradient Boost Regression ML , this model one of the best Additive Models along with the Random Forest Regression, based on the model score , will still prefer to perform Random Forest Regression if time permits.
 
 ### **Dashboard:**
-https://docs.google.com/presentation/d/1OjKWBjaMl5EzKH5ZY40wFdSU4p8Zs2TylpP1UzfbEN8/edit#slide=id.gdb119f06ac_0_277
+There are three dashboards for our project. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
+
+The dashboards can be seen below:
+
+* Location Dashboard: 
+https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/locationDashboard
+
+
+* Sales Dashboard:
+https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/salesDashboard
+
+* Price Dashboard:
+https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/priceDashboard
+
 
 ### **Presentation Slides**
 https://docs.google.com/presentation/d/1Q65tIs-eJl6yF4WKYmtobcKg9m11rnzN_qmfhjeljio/edit#slide=id.p
