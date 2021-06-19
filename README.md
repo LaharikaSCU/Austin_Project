@@ -98,7 +98,7 @@ Following are the steps thats been performed for predicting the house price in A
 		</tbody>
 	</table>
 
-Comparision between Living Area (sqft) vs HousePrice:
+####**Analysis on Living Area (sqft) vs HousePrice:**
 <table>
 	<thead>
 		<tr><th>Scatter plot</th>
@@ -106,27 +106,27 @@ Comparision between Living Area (sqft) vs HousePrice:
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>![01_scatterplot](Images/01_scatterplot.PNG)</td>
-			<td>![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)</td>
+		<tr>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG" width="400"/></td>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG" width="375"/> </td>
 		</tr>
 	</tbody>
 </table>
 
-C Living Area (sqft) vs SalePrice:
-
-![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)
-
-Linear Regression for the house price prediction:
-
-![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)
-
-Scatter plot between Year Built vs SalePrice:
-
-![03_ScatterPlot-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG)
-
-Linear Model on Year Built and House Price Prediction:
-
-![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
+####**Analysis on Year Built vs HousePrice:**
+<table>
+	<thead>
+		<tr><th>Scatter plot</th>
+			<th>Linear Regression predicting House Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG" width="400"/></td>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG" width="350"/> </td>
+		</tr>
+	</tbody>
+</table>
 
 Correlation Matrix:
 ![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
