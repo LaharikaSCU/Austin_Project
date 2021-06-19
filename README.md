@@ -129,8 +129,9 @@ Following are the steps thats been performed for predicting the house price in A
 </table>
 
 Correlation Matrix:
-![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
-
+<p>
+!<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" height="800" alt="05_correlation-matrix"></img>
+</p>
 ### **Choice of Models:** 
 We have used two models for predicting the Austin Sale Price.
 1. Linear Regression		2. Gradient Boost Regression
