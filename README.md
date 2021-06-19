@@ -71,9 +71,9 @@ We are planning to use tableau to create our dashboards.
 ## **Database**
  
 The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
-
-![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png)
-
+<p>
+<img src="https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png" height="500" width="500"/>
+<pr>
 
 ### **ML Model:**
 
@@ -150,32 +150,41 @@ Linear Regression models can be classified into two main types:
 	</thead>
 	<tbody>
 		<tr>
-			<td> Y = bX+a 
-	 
-				 Y' -> predicted value 
+			<td><pre>
+			     Y = bX+a 
+	 			 Y' -> predicted value 
 				 a  -> intercept (estimated regression)
 				 X  -> independent variable
 				 b  -> coefficient 
+				</pre>
 			</td>
-			<td>
+			<td><pre>
 				Y(x1, x2, x3) =w1x1 + w2x2 + w3x3 +.... WnXn + w0
+				</pre>
 			</td>
-			
-	
-		</tr>
+	    </tr>
 	</tbody>
 </table>
-##### 1. Simple Regression
-  
-##### 2. Multivariable Regression
 
-	
-	
 In both the models we calculate the cost function which is Mean Square Error (MSE), this helps to find how well the model is performing in predicting the values.
 If the MSE is high then the model is performing very bad. Also if the data is very baised then the definition 
 
+#### **Advantages and DisAdvanates of Linear Regression:**
+<table>
+	<thead>
+		<tr>
+			<th>Advantages</th>
+			<th>Limitations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Linear Regression fits linearly separable datasets almost perfectly and is often used to find the nature of the relationship between variables.</td>
+		</tr>
+	</tbody>
+	
+</table>
 <b>Advantages: </b>
-Linear Regression fits linearly separable datasets almost perfectly and is often used to find the nature of the relationship between variables.
+
 
 <b>Limiations:</b>
 Underfitting: A situation that arises when machine learning model fails to capture the data properly. 
