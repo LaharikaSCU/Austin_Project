@@ -208,31 +208,38 @@ High Level Steps thats followed while implementing GBR:
 
 Few important parameters of GBR:
 <table>
+	<thead>
+		<tr>
+			<th>Name of Parameter</th>
+			<th>Description</th>
+			<th>Default Values</th>
+		</tr>
+	</thead>
 	<tbody>
 		<tr>
 			<td>Number of Estimator</td>
 			<td>number of bossting stages to be performed by the model</td>
-			<td>Default value: 100</td>
+			<td>100</td>
 		</tr>
 		<tr>
 			<td>Maximum Depth (max_depth)</td>
 			<td>Its optinal parameter, max depth of the decision trees
-			<td>Default value: 3</td>
+			<td>3</td>
 		</tr>
 		<tr>
 			<td>Learning Rate (learning_rate)</td>
 			<td>optional parameter. this is a hyper parameter which determines the step size at each iteration while moving towards a minimum of a loss function</td>
-			<td>Default value: 0.1</td>
+			<td>0.1</td>
 		</tr>
 		<tr>
 			<td>Criterion (criterion)</td>
 			<td>optional parameter, used to measure the quality of a split for decision tree</td>
-			<td>Default value: friedman_mse</td>
+			<td>friedman_mse</td>
 		</tr>
 		<tr>
 			<td>Number of Iteration no change(n_iter_no-Change)</td>
 			<td>optional parameter. This parameter is used to terminate training when vlaidation score is not improving with further iteration</td>
-			<td>Default value: none</td>
+			<td>none</td>
 		</tr>
 	</tbody>
 </table>
