@@ -292,15 +292,6 @@ Few important parameters of GBR:
 </tbody>
 </table>
 
-
-Simple Linear Regression:  
-	Using either Living Sqft or Year Built gave the model score equal to 1. Data can be biased, model prediction can be overfitting.
-Gradient Boost Regression: 
-	The model score is 0.6 based on the selected features.
-	RMSE is 310772.55
-	Even though the rmse is very high, when compared to the Sale Price prediction, the model is almost 5,0000 to 30,000 difference on most of the houses.
-	
-
 ### **Summary:**
 
 1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
