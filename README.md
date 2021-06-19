@@ -98,7 +98,7 @@ Following are the steps thats been performed for predicting the house price in A
 		</tbody>
 	</table>
 
-####**Analysis on Living Area (sqft) vs HousePrice:**
+##### **Analysis on Living Area (sqft) vs HousePrice:**
 <table>
 	<thead>
 		<tr><th>Scatter plot</th>
@@ -113,7 +113,7 @@ Following are the steps thats been performed for predicting the house price in A
 	</tbody>
 </table>
 
-####**Analysis on Year Built vs HousePrice:**
+##### **Analysis on Year Built vs HousePrice:**
 <table>
 	<thead>
 		<tr><th>Scatter plot</th>
@@ -130,11 +130,13 @@ Following are the steps thats been performed for predicting the house price in A
 
 Correlation Matrix:
 <p>
-!<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" height="800" alt="05_correlation-matrix"></img>
+!<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" width"800" height="800" alt="05_correlation-matrix"></img>
 </p>
+
 ### **Choice of Models:** 
 We have used two models for predicting the Austin Sale Price.
-1. Linear Regression		2. Gradient Boost Regression
+	1. Linear Regression.
+	2. Gradient Boost Regression.
 
 #### **Linear Regression:** 
 Linear regression models is mainly used when their is a relationship between a continuous dependent variable (Y) and one or more independent variables X and they are linear.
