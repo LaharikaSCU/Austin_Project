@@ -92,6 +92,7 @@ Following are the steps thats been performed for predicting the house price in A
 			<tr>numOfPhotos</tr>
 			<tr>numPriceChanges</tr>
 		</tbody>
+	</table>
     1. homeImage.				1. numOfPhotos.				1. numPriceChanges.
     1. description.				1. streetAddress.			1. latitude.
 	1. longitude.				1. latestPriceSource.
