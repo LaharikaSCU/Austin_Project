@@ -71,118 +71,235 @@ We are planning to use tableau to create our dashboards.
 ## **Database**
  
 The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
-
-![ERD](https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png)
-
+<p>
+<img src="https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png" height="800" width="800"/>
+<pr>
 
 ### **ML Model:**
 
 Following are the steps thats been performed for predicting the house price in Austin Area.
 
-Following are the steps thats been performed for predicting the house price in Austin Area.
-
 * Drop the following columns as they are not helpful for prediction
 
-    1. homeImage.				2. numOfPhotos.				3. numPriceChanges.
-    4. description.				5. streetAddress.			6. latitude.
-	7. longitude.				8. latestPriceSource.
+	<table>
+		<tbody>
+			<tr><td>homeImage</td>
+				<td>numOfPhotos</td>
+				<td>numPriceChanges</td>
+				<td>latestPriceSource</td>
+			</tr>
+			<tr><td>description</td>
+			    <td>streetAddress</td>
+				<td>latitude</td>
+				<td>longitude</td>
+			</tr>
+		</tbody>
+	</table>
 
-Scatter plot between Living Area (sqft) vs SalePrice:
+#### **Analysis on Living Area (sqft) vs HousePrice:**
+<table>
+	<thead>
+		<tr><th>Scatter plot</th>
+			<th>Linear Regression predicting House Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG" width="400"/></td>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG" width="375"/> </td>
+		</tr>
+	</tbody>
+</table>
 
-![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)
-
-Linear Regression for the house price prediction:
-
-![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)
-
-Scatter plot between Year Built vs SalePrice:
-
-![03_ScatterPlot-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG)
-
-Linear Model on Year Built and House Price Prediction:
-
-![04_LinearModel-YearBuilt-vs-SalesPrice](https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG)
+#### **Analysis on Year Built vs HousePrice:**
+<table>
+	<thead>
+		<tr><th>Scatter plot</th>
+			<th>Linear Regression predicting House Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG" width="400"/></td>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG" width="400"/> </td>
+		</tr>
+	</tbody>
+</table>
 
 Correlation Matrix:
-![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
-
-
+<p>
+<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" width"800" height="800" alt="05_correlation-matrix"></img>
+</p>
 
 ### **Choice of Models:** 
-We have used two models for predicting the Austin Sale Price.
-1. Linear Regression		2. Gradient Boost Regression
+We have used two models for predicting the Austin Sale Price"
+
+	1. Linear Regression.
+	2. Gradient Boost Regression.
+	
 
 #### **Linear Regression:** 
 Linear regression models is mainly used when their is a relationship between a continuous dependent variable (Y) and one or more independent variables X and they are linear.
 Linear Regression models can be classified into two main types:
-##### 1. Simple Regression
-     Y = bX+a 
-	 
+<table>
+	<thead>
+		<th>Simple Linear Regression</th>
+		<th>Multi Variable Linear Regression</th>
+	</thead>
+	<tbody>
+	<tr>
+	<td>
+	<pre>
+	 Y = bX+a 
 	 Y' -> predicted value 
 	 a  -> intercept (estimated regression)
 	 X  -> independent variable
 	 b  -> coefficient 
-	
-##### 2. Multivariable Regression
+	</pre>
+	</td>
+	<td>
+	<pre>
+	Y(x1, x2, x3) = w1x1+w2x2+w3x3+.... WnXn + w0
+	</pre>
+	</td>
+	</tr>
+	</tbody>
+</table>
 
-	Y(x1, x2, x3) =w1x1 + w2x2 + w3x3 +.... WnXn + w0
-	
 In both the models we calculate the cost function which is Mean Square Error (MSE), this helps to find how well the model is performing in predicting the values.
 If the MSE is high then the model is performing very bad. Also if the data is very baised then the definition 
 
-<b>Advantages: </b>
-Linear Regression fits linearly separable datasets almost perfectly and is often used to find the nature of the relationship between variables.
-
-<b>Limiations:</b>
-Underfitting: A situation that arises when machine learning model fails to capture the data properly. 
-Sensitive to outliers: Outliers of a dataset are anomalies or extreme values that deviate from the other data points of the distribution. Data outliers can damage the performance. 
-One of most important data assumption is each variable is independent of each other and hence any multicollinearity must be removed before applying linear regression.
+#### **<span style="color:blue">Advantages and Limitations of Linear Regression:</span>**
+<table>
+	<thead>
+		<tr>
+			<th>Advantages</th>
+			<th>Limitations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Linear Regression fits linearly separable datasets almost perfectly and is often used to find the nature of the relationship between variables.</td>
+			 <td>Under Fitting: A situation arises when ML models fails to capture the data properly.</td>
+		</tr>
+		<tr><td></td>
+			<td>Sensitive to Outliers: Outliers of dataset also called anomalies or extreme values that deviates from the linear points of the distributions.
+				Dataoutliers can damage the performance.
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Assumption: Each variable is independent of each other. Hence any multi-colinearity must be removed before applying linear regression.</td>
+		</tr>
+	</tbody>
+	
+</table>
 
 #### **Gradient Boost Regression (GBR):**
 Boosting is a machine learning way of combining multiple simple models into a single composite model, also called as additive model, since simple models are added one at a time keeping the number
 of trees in the model unchanged. As we combine more and more simple models the  model becomes a strong predictor.
 Gradient Boosting comes from a fact that alogrithm uses gradient descent to minimize the loss. Here also we calculate the residuals (difference between the actual known target value and the predictor value).
-The residual came from a weaker model will be input the next model , this process iterative until the model predicts the correct value.
+The residual came from a weaker model will be input the next model, its an iterative process until the model predicts the correct value or there's no change in the defined loss function.
+
 High Level Steps thats followed while implementing GBR:
+<pre>
 1. Selet a weak learner.
 2. Additive model.
-3. Define a loss function (residuals)
+3. Define a loss function (residuals).
 4. Minimize the loss function.
+</pre>
 
 Few important parameters of GBR:
-Number of Estimators(n_estimators): number of bossting stages to be performed by the model. Default value 100 
-Maximum Depth (max_depth): Default value is 3 and optional paremeters (max depth of the decision trees)
-Learning Rate (learning_rate): default value is 0.1, optional parameter. this is a hyper parameter which determines the step size at each iteration while moving towards a minimum of a loss function.
-Criterion (criterion): default value is friedman_mse , optional parameter, used to measure the quality of a split for decision tree.
-Number of Iteration no change(n_iter_no-Change): Defualt is none, optional parameter. This parameter is used to terminate training when vlaidation score is not improving with further iteration.
+<table>
+	<thead>
+		<tr>
+			<th>Name of Parameter</th>
+			<th>Description</th>
+			<th>Default Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of Estimator</td>
+			<td>number of bossting stages to be performed by the model</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>Maximum Depth (max_depth)</td>
+			<td>Its optinal parameter, max depth of the decision trees
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Learning Rate (learning_rate)</td>
+			<td>optional parameter. this is a hyper parameter which determines the step size at each iteration while moving towards a minimum of a loss function</td>
+			<td>0.1</td>
+		</tr>
+		<tr>
+			<td>Criterion (criterion)</td>
+			<td>optional parameter, used to measure the quality of a split for decision tree</td>
+			<td>friedman_mse</td>
+		</tr>
+		<tr>
+			<td>Number of Iteration no change(n_iter_no-Change)</td>
+			<td>optional parameter. This parameter is used to terminate training when vlaidation score is not improving with further iteration</td>
+			<td>none</td>
+		</tr>
+	</tbody>
+</table>
+
 
 <b> Advantages of Gradient Boost Regression:</b>
+<pre>
 1. Better accuracy
-1. Less Pre-Processing
-1. Higher Flexibility
-1. Missing Data
-
-### **Feature Engineer**:
+2. Less Pre-Processing
+3. Higher Flexibility
+4. Missing Data
+</pre>
+### **Pre-processing**:
+1.Filter the null values.
+1.Drop the unwanted values.
+1 Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
+### **Feature Engineering**:
 1. Dropped independent categorical variables (columns) which are not affecting the Sale Price.
-1. Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
 1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
-1. Based on the Correlation Matrix we were able to limit the most independent variables which are affecting the Sale Price.
+1. Based on the Correlation Matrix we were able to limit the number of independent variables which are affecting the Sale Price to 6 features.
+1. Below are the 6 features that are used to apply  on Linear Regression and Gradient Boost Regression.
+<pre>
+	livingAreaSqft			numOfBathrooms		numOfBedrooms
+	numOfHighSchools		avgSchoolRating		garageSpaces
+</pre>
 
-### **Results**:
-Simple Linear Regression:  
-	Using either Living Sqft or Year Built gave the model score equal to 1. Data can be biased, model prediction can be overfitting.
-Gradient Boost Regression: 
-	The model score is 0.6 based on the selected features.
-	RMSE is 310772.55
-	Even though the rmse is very high, when compared to the Sale Price prediction, the model is almost 5,0000 to 30,000 difference on most of the houses.
-	
+### **ML Results and Comparision of Linear Regression and Gradient Boost Regression**:
+
+<table>
+<thead>
+	<tr>
+		<th>Comparision Value</th>
+		<th>Multivariate Linear Regression</th>
+		<th>Gradient Boost Regression</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Root Mean Square (rmse)</td>
+		<td> 1.83</td>
+		<td> 57957</td>
+	</tr>
+	<tr>
+		<td>Prediction Score</td>
+		<td> 1.00</td>
+		<td> 0.98</td>
+	</tr>
+</tbody>
+</table>
 
 ### **Summary:**
 
-1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+1. Using Simple Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
 1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
 1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
-1. Applied the Gradient Boost Regression ML , this model one of the best Additive Models along with the Random Forest Regression, based on the model score , will still prefer to perform Random Forest Regression if time permits.
+1. Even tough the Multivariate Linear Regression has prediction score of 1 and root mean square is very less, the model might be either biased or if the new data contains
+more outliers or nulls, the model will not work properly.
+1. On the other side Gradient Boost Regression  has very high score of RMSE and prediction score, would prefer to use this model to predict the house price.
 
 ### **Dashboard:**
 There are three dashboards for our project. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
