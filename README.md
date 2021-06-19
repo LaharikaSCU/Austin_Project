@@ -108,6 +108,7 @@ Comparision between Living Area (sqft) vs HousePrice:
 	<tbody>
 		<tr><td>![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)</td>
 			<td>![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)</td>
+		</tr>
 	</tbody>
 </table>
 
