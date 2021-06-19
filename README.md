@@ -83,9 +83,9 @@ Following are the steps thats been performed for predicting the house price in A
 
 * Drop the following columns as they are not helpful for prediction
 
-    1. homeImage.				2. numOfPhotos.				3. numPriceChanges.
-    4. description.				5. streetAddress.			6. latitude.
-	7. longitude.				8. latestPriceSource.
+    1. homeImage.				1. numOfPhotos.				1. numPriceChanges.
+    1. description.				1. streetAddress.			1. latitude.
+	1. longitude.				1. latestPriceSource.
 
 Scatter plot between Living Area (sqft) vs SalePrice:
 
@@ -105,8 +105,6 @@ Linear Model on Year Built and House Price Prediction:
 
 Correlation Matrix:
 ![05_correlation-matrix](https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG)
-
-
 
 ### **Choice of Models:** 
 We have used two models for predicting the Austin Sale Price.
@@ -162,7 +160,7 @@ Number of Iteration no change(n_iter_no-Change): Defualt is none, optional param
 1. Higher Flexibility
 1. Missing Data
 
-### **Feature Engineer**:
+### **Feature Engineering**:
 1. Dropped independent categorical variables (columns) which are not affecting the Sale Price.
 1. Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
 1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
