@@ -130,7 +130,7 @@ Following are the steps thats been performed for predicting the house price in A
 
 Correlation Matrix:
 <p>
-!<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" width"800" height="800" alt="05_correlation-matrix"></img>
+<img src="https://user-images.githubusercontent.com/8316473/119270446-55a72900-bbc2-11eb-92ef-3069e44f8f10.PNG" width"800" height="800" alt="05_correlation-matrix"></img>
 </p>
 
 ### **Choice of Models:** 
@@ -143,17 +143,33 @@ We have used two models for predicting the Austin Sale Price"
 #### **Linear Regression:** 
 Linear regression models is mainly used when their is a relationship between a continuous dependent variable (Y) and one or more independent variables X and they are linear.
 Linear Regression models can be classified into two main types:
-##### 1. Simple Regression
-     Y = bX+a 
+<table>
+	<thead>
+		<th>Simple Linear Regression</th>
+		<th>Multi Variable Linear Regression</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td> Y = bX+a 
 	 
-	 Y' -> predicted value 
-	 a  -> intercept (estimated regression)
-	 X  -> independent variable
-	 b  -> coefficient 
+				 Y' -> predicted value 
+				 a  -> intercept (estimated regression)
+				 X  -> independent variable
+				 b  -> coefficient 
+			</td>
+			<td>
+				Y(x1, x2, x3) =w1x1 + w2x2 + w3x3 +.... WnXn + w0
+			</td>
+			
 	
+		</tr>
+	</tbody>
+</table>
+##### 1. Simple Regression
+  
 ##### 2. Multivariable Regression
 
-	Y(x1, x2, x3) =w1x1 + w2x2 + w3x3 +.... WnXn + w0
+	
 	
 In both the models we calculate the cost function which is Mean Square Error (MSE), this helps to find how well the model is performing in predicting the values.
 If the MSE is high then the model is performing very bad. Also if the data is very baised then the definition 
