@@ -97,11 +97,21 @@ Following are the steps thats been performed for predicting the house price in A
 			</tr>
 		</tbody>
 	</table>
-    
-    1. .				1. .			1. latitude.
-	1. longitude.				1. 
 
-Scatter plot between Living Area (sqft) vs SalePrice:
+Comparision between Living Area (sqft) vs HousePrice:
+<table>
+	<thead>
+		<tr><th>Scatter plot</th>
+			<th>Linear Regression predicting House Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)</td>
+			<td>![02_linear_regression_model](https://user-images.githubusercontent.com/8316473/119210840-3601ea80-ba74-11eb-8af2-d0ae1cb1c2b3.PNG)</td>
+	</tbody>
+</table>
+
+C Living Area (sqft) vs SalePrice:
 
 ![01_scatterplot](https://user-images.githubusercontent.com/8316473/119210834-284c6500-ba74-11eb-8a8f-5f1dc3cbc0ca.PNG)
 
