@@ -79,8 +79,6 @@ The ERD, as shown below, depicts the relationships between tables within the SQL
 
 Following are the steps thats been performed for predicting the house price in Austin Area.
 
-Following are the steps thats been performed for predicting the house price in Austin Area.
-
 * Drop the following columns as they are not helpful for prediction
 
 	<table>
@@ -137,7 +135,7 @@ Correlation Matrix:
 We have used two models for predicting the Austin Sale Price"
 
 	1. Linear Regression.
-	1. Gradient Boost Regression.
+	2. Gradient Boost Regression.
 	
 
 #### **Linear Regression:** 
@@ -198,19 +196,47 @@ If the MSE is high then the model is performing very bad. Also if the data is ve
 Boosting is a machine learning way of combining multiple simple models into a single composite model, also called as additive model, since simple models are added one at a time keeping the number
 of trees in the model unchanged. As we combine more and more simple models the  model becomes a strong predictor.
 Gradient Boosting comes from a fact that alogrithm uses gradient descent to minimize the loss. Here also we calculate the residuals (difference between the actual known target value and the predictor value).
-The residual came from a weaker model will be input the next model , this process iterative until the model predicts the correct value.
+The residual came from a weaker model will be input the next model, its an iterative process until the model predicts the correct value or there's no change in the defined loss function.
+
 High Level Steps thats followed while implementing GBR:
+<pre>
 1. Selet a weak learner.
 2. Additive model.
-3. Define a loss function (residuals)
+3. Define a loss function (residuals).
 4. Minimize the loss function.
+</pre>
 
 Few important parameters of GBR:
-Number of Estimators(n_estimators): number of bossting stages to be performed by the model. Default value 100 
-Maximum Depth (max_depth): Default value is 3 and optional paremeters (max depth of the decision trees)
-Learning Rate (learning_rate): default value is 0.1, optional parameter. this is a hyper parameter which determines the step size at each iteration while moving towards a minimum of a loss function.
-Criterion (criterion): default value is friedman_mse , optional parameter, used to measure the quality of a split for decision tree.
-Number of Iteration no change(n_iter_no-Change): Defualt is none, optional parameter. This parameter is used to terminate training when vlaidation score is not improving with further iteration.
+<table>
+	<tbody>
+		<tr>
+			<td>Number of Estimator</td>
+			<td>number of bossting stages to be performed by the model</td>
+			<td>Default value: 100</td>
+		</tr>
+		<tr>
+			<td>Maximum Depth (max_depth)</td>
+			<td>Its optinal parameter, max depth of the decision trees
+			<td>Default value: 3</td>
+		</tr>
+		<tr>
+			<td>Learning Rate (learning_rate)</td>
+			<td>optional parameter. this is a hyper parameter which determines the step size at each iteration while moving towards a minimum of a loss function</td>
+			<td>Default value: 0.1</td>
+		</tr>
+		<tr>
+			<td>Criterion (criterion)</td>
+			<td>optional parameter, used to measure the quality of a split for decision tree</td>
+			<td>Default value: friedman_mse</td>
+		</tr>
+		<tr>
+			<td>Number of Iteration no change(n_iter_no-Change)</td>
+			<td>optional parameter. This parameter is used to terminate training when vlaidation score is not improving with further iteration</td>
+			<td>Default value: none</td>
+		</tr>
+	</tbody>
+</table>
+
 
 <b> Advantages of Gradient Boost Regression:</b>
 1. Better accuracy
