@@ -88,12 +88,18 @@ Following are the steps thats been performed for predicting the house price in A
 			<tr><td>homeImage</td>
 				<td>numOfPhotos</td>
 				<td>numPriceChanges</td>
+				<td>latestPriceSource</td>
+			</tr>
+			<tr><td>description</td>
+			    <td>streetAddress</td>
+				<td>latitude</td>
+				<td>longitude</td>
 			</tr>
 		</tbody>
 	</table>
-    1. homeImage.				1. numOfPhotos.				1. numPriceChanges.
-    1. description.				1. streetAddress.			1. latitude.
-	1. longitude.				1. latestPriceSource.
+    
+    1. .				1. .			1. latitude.
+	1. longitude.				1. 
 
 Scatter plot between Living Area (sqft) vs SalePrice:
 
