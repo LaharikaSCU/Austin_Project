@@ -259,9 +259,15 @@ Few important parameters of GBR:
 ### **Feature Engineering**:
 1. Dropped independent categorical variables (columns) which are not affecting the Sale Price.
 1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
-1. Based on the Correlation Matrix we were able to limit the most independent variables which are affecting the Sale Price.
+1. Based on the Correlation Matrix we were able to limit the number of independent variables which are affecting the Sale Price to 6 features.
+1. Below are the 6 features that are used to apply  on Linear Regression and Gradient Boost Regression.
+<pre>
+	livingAreaSqft		numOfBathrooms		numOfBedrooms		numOfHighSchools		avgSchoolRating		garageSpaces
+</pre>
 
-### **Results**:
+### **ML Results and Comparision of Linear Regression and Gradient Boost Regression**:
+While 
+
 Simple Linear Regression:  
 	Using either Living Sqft or Year Built gave the model score equal to 1. Data can be biased, model prediction can be overfitting.
 Gradient Boost Regression: 
