@@ -84,13 +84,11 @@ Following are the steps thats been performed for predicting the house price in A
 * Drop the following columns as they are not helpful for prediction
 
 	<table>
-		<thead>
-			<tr> Dropped Columns</tr>
-		</thead>
 		<tbody>
-			<tr>homeImage</tr>
-			<tr>numOfPhotos</tr>
-			<tr>numPriceChanges</tr>
+			<tr><td>homeImage</td>
+				</td>numOfPhotos</td>
+				</td>numPriceChanges</td>
+			</tr>
 		</tbody>
 	</table>
     1. homeImage.				1. numOfPhotos.				1. numPriceChanges.
