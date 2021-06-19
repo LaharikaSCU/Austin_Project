@@ -86,8 +86,8 @@ Following are the steps thats been performed for predicting the house price in A
 	<table>
 		<tbody>
 			<tr><td>homeImage</td>
-				</td>numOfPhotos</td>
-				</td>numPriceChanges</td>
+				<td>numOfPhotos</td>
+				<td>numPriceChanges</td>
 			</tr>
 		</tbody>
 	</table>
