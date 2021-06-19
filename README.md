@@ -148,15 +148,17 @@ Linear Regression models can be classified into two main types:
 	</thead>
 	<tbody>
 	<tr>
-	<td><pre>
+	<td>
+	<pre>
 	 Y = bX+a 
 	 Y' -> predicted value 
 	 a  -> intercept (estimated regression)
 	 X  -> independent variable
 	 b  -> coefficient 
-		</pre>
+	</pre>
 	</td>
-	<td><pre>
+	<td>
+	<pre>
 	Y(x1, x2, x3) = w1x1+w2x2+w3x3+.... WnXn + w0
 	</pre>
 	</td>
@@ -266,7 +268,29 @@ Few important parameters of GBR:
 </pre>
 
 ### **ML Results and Comparision of Linear Regression and Gradient Boost Regression**:
-While 
+
+<table>
+<thead>
+	<tr>
+		<th>Comparision Value</th>
+		<th>Multivariate Linear Regression</th>
+		<th>Gradient Boost Regression</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Root Mean Square (rmse)</td>
+		<td> 1.83</td>
+		<td> 57957</td>
+	</tr>
+	<tr>
+		<td>Prediction Score</td>
+		<td> 1.00</td>
+		<td> 0.98</td>
+	</tr>
+</tbody>
+</table>
+
 
 Simple Linear Regression:  
 	Using either Living Sqft or Year Built gave the model score equal to 1. Data can be biased, model prediction can be overfitting.
