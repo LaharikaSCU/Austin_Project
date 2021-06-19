@@ -246,14 +246,18 @@ Few important parameters of GBR:
 
 
 <b> Advantages of Gradient Boost Regression:</b>
+<pre>
 1. Better accuracy
-1. Less Pre-Processing
-1. Higher Flexibility
-1. Missing Data
-
+2. Less Pre-Processing
+3. Higher Flexibility
+4. Missing Data
+</pre>
+### **Pre-processing**:
+1.Filter the null values.
+1.Drop the unwanted values.
+1 Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
 ### **Feature Engineering**:
 1. Dropped independent categorical variables (columns) which are not affecting the Sale Price.
-1. Converted Sales Date into numerical variable by making transforming the date into  new construction vs the Resale houses like if anything greater than 2020 is new (1) else old (0). 
 1. Similarly converted the each city to numberical variable each city is a column which takes one of the binary value.
 1. Based on the Correlation Matrix we were able to limit the most independent variables which are affecting the Sale Price.
 
