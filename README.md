@@ -151,16 +151,16 @@ Linear Regression models can be classified into two main types:
 	<tbody>
 	<tr>
 	<td><pre>
-	     Y = bX+a 
-		 Y' -> predicted value 
-		 a  -> intercept (estimated regression)
-		 X  -> independent variable
-		 b  -> coefficient 
+	 Y = bX+a 
+	 Y' -> predicted value 
+	 a  -> intercept (estimated regression)
+	 X  -> independent variable
+	 b  -> coefficient 
 		</pre>
 	</td>
 	<td><pre>
-		Y(x1, x2, x3)=w1x1+w2x2+w3x3+.... WnXn+w0
-		</pre>
+	Y(x1, x2, x3) = w1x1+w2x2+w3x3+.... WnXn + w0
+	</pre>
 	</td>
 	</tr>
 	</tbody>
@@ -169,7 +169,7 @@ Linear Regression models can be classified into two main types:
 In both the models we calculate the cost function which is Mean Square Error (MSE), this helps to find how well the model is performing in predicting the values.
 If the MSE is high then the model is performing very bad. Also if the data is very baised then the definition 
 
-#### **Advantages and DisAdvanates of Linear Regression:**
+#### **<span style="color:blue">Advantages and Limitations of Linear Regression:</span>**
 <table>
 	<thead>
 		<tr>
@@ -193,13 +193,6 @@ If the MSE is high then the model is performing very bad. Also if the data is ve
 	</tbody>
 	
 </table>
-<b>Advantages: </b>
-
-
-<b>Limiations:</b>
-Underfitting: A situation that arises when machine learning model fails to capture the data properly. 
-Sensitive to outliers: Outliers of a dataset are anomalies or extreme values that deviate from the other data points of the distribution. Data outliers can damage the performance. 
-One of most important data assumption is each variable is independent of each other and hence any multicolinearity must be removed before applying linear regression.
 
 #### **Gradient Boost Regression (GBR):**
 Boosting is a machine learning way of combining multiple simple models into a single composite model, also called as additive model, since simple models are added one at a time keeping the number
