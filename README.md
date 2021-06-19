@@ -294,10 +294,12 @@ Few important parameters of GBR:
 
 ### **Summary:**
 
-1. Using Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
+1. Using Simple Linear Regression ML, the data points are not along the linear line, so it's very hard to predict the house price using the linear regression using the Living Area.
 1. On a second thought used Year Built instead of the Living Area, same results hard to predict the House Price using Linear Regression.
 1. Added the correlation Matrix which helps to find out which Features are helpful effecting the house prices.
-1. Applied the Gradient Boost Regression ML , this model one of the best Additive Models along with the Random Forest Regression, based on the model score , will still prefer to perform Random Forest Regression if time permits.
+1. Even tough the Multivariate Linear Regression has prediction score of 1 and root mean square is very less, the model might be either biased or if the new data contains
+more outliers or nulls, the model will not work properly.
+1. On the other side Gradient Boost Regression  has very high score of RMSE and prediction score, would prefer to use this model to predict the house price.
 
 ### **Dashboard:**
 There are three dashboards for our project. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
