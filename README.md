@@ -264,7 +264,8 @@ Few important parameters of GBR:
 1. Based on the Correlation Matrix we were able to limit the number of independent variables which are affecting the Sale Price to 6 features.
 1. Below are the 6 features that are used to apply  on Linear Regression and Gradient Boost Regression.
 <pre>
-	livingAreaSqft		numOfBathrooms		numOfBedrooms		numOfHighSchools		avgSchoolRating		garageSpaces
+	livingAreaSqft			numOfBathrooms		numOfBedrooms
+	numOfHighSchools		avgSchoolRating		garageSpaces
 </pre>
 
 ### **ML Results and Comparision of Linear Regression and Gradient Boost Regression**:
