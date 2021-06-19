@@ -123,7 +123,7 @@ Following are the steps thats been performed for predicting the house price in A
 	<tbody>
 		<tr>
 			<td><img src="https://user-images.githubusercontent.com/8316473/119240546-d825df00-bb15-11eb-82b3-5053c72ddbc9.PNG" width="400"/></td>
-			<td><img src="https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG" width="350"/> </td>
+			<td><img src="https://user-images.githubusercontent.com/8316473/119240561-02779c80-bb16-11eb-93de-75da2ea4f856.PNG" width="375"/> </td>
 		</tr>
 	</tbody>
 </table>
