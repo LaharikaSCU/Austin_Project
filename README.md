@@ -149,20 +149,20 @@ Linear Regression models can be classified into two main types:
 		<th>Multi Variable Linear Regression</th>
 	</thead>
 	<tbody>
-		<tr>
-			<td><pre>
-			     Y = bX+a 
-	 			 Y' -> predicted value 
-				 a  -> intercept (estimated regression)
-				 X  -> independent variable
-				 b  -> coefficient 
-				</pre>
-			</td>
-			<td><pre>
-				Y(x1, x2, x3)=w1x1+w2x2+w3x3+.... WnXn+w0
-				</pre>
-			</td>
-	    </tr>
+	<tr>
+	<td><pre>
+	     Y = bX+a 
+		 Y' -> predicted value 
+		 a  -> intercept (estimated regression)
+		 X  -> independent variable
+		 b  -> coefficient 
+		</pre>
+	</td>
+	<td><pre>
+		Y(x1, x2, x3)=w1x1+w2x2+w3x3+.... WnXn+w0
+		</pre>
+	</td>
+	</tr>
 	</tbody>
 </table>
 
@@ -185,6 +185,10 @@ If the MSE is high then the model is performing very bad. Also if the data is ve
 			<td>Sensitive to Outliers: Outliers of dataset also called anomalies or extreme values that deviates from the linear points of the distributions.
 				Dataoutliers can damage the performance.
 			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Assumption: Each variable is independent of each other. Hence any multi-colinearity must be removed before applying linear regression.</td>
 		</tr>
 	</tbody>
 	
