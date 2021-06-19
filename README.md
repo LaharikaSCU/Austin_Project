@@ -72,7 +72,7 @@ We are planning to use tableau to create our dashboards.
  
 The ERD, as shown below, depicts the relationships between tables within the SQL database. For this segment of the project, the tables are connected through the zpid, or more commonly known as the Zillow ID, column. The features and amenities tables are connected with the price table as often, people decide on what amenities and add-ons they would like based on the price, rather than the location. The schools table is linked to the location as the schools directly mentions the location by including columns such as 'avgSchoolDistance'. The tables are all linked in some shape or form to each other. The database is connected to the machine learning model in order to make predictions based on the data available.
 <p>
-<img src="https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png" height="500" width="500"/>
+<img src="https://github.com/LaharikaSCU/Austin_Project/blob/lpochampalli/segment2/Images/AHP_ERD.png" height="800" width="800"/>
 <pr>
 
 ### **ML Model:**
@@ -159,7 +159,7 @@ Linear Regression models can be classified into two main types:
 				</pre>
 			</td>
 			<td><pre>
-				Y(x1, x2, x3) =w1x1 + w2x2 + w3x3 +.... WnXn + w0
+				Y(x1, x2, x3)=w1x1+w2x2+w3x3+.... WnXn+w0
 				</pre>
 			</td>
 	    </tr>
@@ -179,6 +179,12 @@ If the MSE is high then the model is performing very bad. Also if the data is ve
 	</thead>
 	<tbody>
 		<tr><td>Linear Regression fits linearly separable datasets almost perfectly and is often used to find the nature of the relationship between variables.</td>
+			 <td>Under Fitting: A situation arises when ML models fails to capture the data properly.</td>
+		</tr>
+		<tr><td></td>
+			<td>Sensitive to Outliers: Outliers of dataset also called anomalies or extreme values that deviates from the linear points of the distributions.
+				Dataoutliers can damage the performance.
+			</td>
 		</tr>
 	</tbody>
 	
@@ -189,7 +195,7 @@ If the MSE is high then the model is performing very bad. Also if the data is ve
 <b>Limiations:</b>
 Underfitting: A situation that arises when machine learning model fails to capture the data properly. 
 Sensitive to outliers: Outliers of a dataset are anomalies or extreme values that deviate from the other data points of the distribution. Data outliers can damage the performance. 
-One of most important data assumption is each variable is independent of each other and hence any multicollinearity must be removed before applying linear regression.
+One of most important data assumption is each variable is independent of each other and hence any multicolinearity must be removed before applying linear regression.
 
 #### **Gradient Boost Regression (GBR):**
 Boosting is a machine learning way of combining multiple simple models into a single composite model, also called as additive model, since simple models are added one at a time keeping the number
