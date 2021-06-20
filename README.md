@@ -262,9 +262,9 @@ Few important parameters of GBR:
 4. Missing Data
 </pre>
 ### **Pre-processing**:
-1.Filter the null values.
-2.Drop the unwanted values.
-3.Convert Sales Date into numerical variable by transforming the date into a boolean variable. (new construction vs the resale houses) For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
+1. Filter the null values.
+2. Drop the unwanted values.
+3. Convert Sales Date into numerical variable by transforming the date into a boolean variable. (new construction vs the resale houses) For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
 
 ### **Feature Engineering**:
 
