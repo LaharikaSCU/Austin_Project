@@ -307,7 +307,7 @@ Few important parameters of GBR:
 * Afterwards, we used year built instead of the living area — the results were also hard to predict the house price using linear regression.
 * The correlation matrix was added — it helped to find out which features are helpful to predict the house prices.
 * Even tough the multivariate linear regression has a prediction score of 1 and the root mean square is less than 1, the model appears to be either biased or the new data contains more outliers or nulls. If either of these are the case, the model will not work properly.
-1. The gradient boost regression has a high root mean square error and prediction score; due to these observations, we would recommend to use this model to predict the house price.
+* The gradient boost regression has a high root mean square error and prediction score. These observations indicate that we can use this model to predict the house price.
 
 ### **Dashboard:**
 
