@@ -209,7 +209,7 @@ Gradient boost regression is a form of ML that combines multiple simple models i
 
 High Level Steps thats followed while implementing GBR:
 <pre>
-1. Selet a weak learner.
+1. Select a weak learner.
 2. Additive model.
 3. Define a loss function (residuals).
 4. Minimize the loss function.
@@ -263,8 +263,8 @@ Few important parameters of GBR:
 </pre>
 ### **Pre-processing**:
 1.Filter the null values.
-1.Drop the unwanted values.
-1 Converted Sales Date into numerical variable by transforming the date into new construction vs the resale houses. For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
+2.Drop the unwanted values.
+3.Convert Sales Date into numerical variable by transforming the date into a boolean variable. (new construction vs the resale houses) For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
 
 ### **Feature Engineering**:
 
