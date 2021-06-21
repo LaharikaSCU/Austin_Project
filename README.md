@@ -209,7 +209,7 @@ Gradient boost regression is a form of ML that combines multiple simple models i
 
 High Level Steps thats followed while implementing GBR:
 <pre>
-1. Selet a weak learner.
+1. Select a weak learner.
 2. Additive model.
 3. Define a loss function (residuals).
 4. Minimize the loss function.
@@ -262,9 +262,9 @@ Few important parameters of GBR:
 4. Missing Data
 </pre>
 ### **Pre-processing**:
-1.Filter the null values.
-1.Drop the unwanted values.
-1 Converted Sales Date into numerical variable by transforming the date into new construction vs the resale houses. For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
+1. Filter the null values.
+2. Drop the unwanted values.
+3. Convert Sales Date into numerical variable by transforming the date into a boolean variable. (new construction vs the resale houses) For example, if anything greater than 2020 is new, it will be shown as a 1; if it is old, it will be shown as a 0. 
 
 ### **Feature Engineering**:
 
@@ -307,28 +307,27 @@ Few important parameters of GBR:
 * Afterwards, we used year built instead of the living area — the results were also hard to predict the house price using linear regression.
 * The correlation matrix was added — it helped to find out which features are helpful to predict the house prices.
 * Even tough the multivariate linear regression has a prediction score of 1 and the root mean square is less than 1, the model appears to be either biased or the new data contains more outliers or nulls. If either of these are the case, the model will not work properly.
-1. The gradient boost regression has a high root mean square error and prediction score; due to these observations, we would recommend to use this model to predict the house price.
+* The gradient boost regression has a high root mean square error and prediction score. These observations indicate that we can use this model to predict the house price.
 
 ### **Dashboard:**
 
-There are three dashboards for our project. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
+There are four dashboards for our project. The analysis dashboard shows multiple visualiziations that portray the overall process of our project. The first visualizations are of our initial scatter plots followed by their corresponding linear regression models to illustrate how the linear models were not reliable to use to predict house prices. The analysis dashboard also shows the matrix correlation of 0.15 used to illustrate how each feature affected the price of the house. The last visualization shown was a chart that illustrates our predicted prices compared to the actual prices once we used the GradientBoost Regression model. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
 
 The dashboards can be seen below:
 
-* Location Dashboard: 
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/locationDashboard
+* Analysis Dashboard: 
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/analysisDashboard
 
+* Location Dashboard: 
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/locationDashboard
 
 * Sales Dashboard:
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/salesDashboard
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/salesDashboard
 
 * Price Dashboard:
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/priceDashboard
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/priceDashboard
+
 
 
 ### **Presentation Slides**
 https://docs.google.com/presentation/d/1Q65tIs-eJl6yF4WKYmtobcKg9m11rnzN_qmfhjeljio/edit#slide=id.p
-
-
-
-
