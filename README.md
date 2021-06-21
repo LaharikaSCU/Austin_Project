@@ -331,7 +331,3 @@ https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/pri
 
 ### **Presentation Slides**
 https://docs.google.com/presentation/d/1Q65tIs-eJl6yF4WKYmtobcKg9m11rnzN_qmfhjeljio/edit#slide=id.p
-
-
-
-
