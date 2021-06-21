@@ -311,19 +311,22 @@ Few important parameters of GBR:
 
 ### **Dashboard:**
 
-There are three dashboards for our project. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
+There are four dashboards for our project. The analysis dashboard shows multiple visualziations that portray the overall process of our project. The first visualizations are of our inital scatter plots followed by their corresponding linear regression models to illustrate how the linear models were not reliable to use to predict house prices. The analysis dashboard also shows the matrix correlation of 0.15 used to illustrate how each feature affected the price of the house. The last visualization shown was a chart that illustrates our predicted prices compared to the actual prices once we used the GradientBoost Regression model. The locations dashboard portrays how the average housing price differs from Austin vs. suburbs. The second dashboard — the sales dashboard — shows how the average housing price increases or decreases in each year from 2019 until 2021 and in each general month. Finally, the price dashboard portrays how the living area square feet, number of bathrooms, and the average nearby school ratings affect the housing prices. 
 
 The dashboards can be seen below:
 
-* Location Dashboard: 
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/locationDashboard
+* Analysis Dashboard: 
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/analysisDashboard
 
+* Location Dashboard: 
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/locationDashboard
 
 * Sales Dashboard:
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/salesDashboard
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/salesDashboard
 
 * Price Dashboard:
-https://public.tableau.com/app/profile/shireen.kahlon/viz/austinHousingMarket/priceDashboard
+https://public.tableau.com/app/profile/brian.umlang/viz/austinHousingMarket1/priceDashboard
+
 
 
 ### **Presentation Slides**
